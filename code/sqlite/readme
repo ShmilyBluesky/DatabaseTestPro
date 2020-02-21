@@ -1,0 +1,20 @@
+// 创建表
+CREATE TABLE UserInfo (ID INTEGER PRIMARY KEY AUTOINCREMENT, Name VARCHAR, IDNo INT, Sex INT, Age INT)
+
+
+// 增加一行数据
+INSERT INTO UserInfo (Name, IDNo, Sex, Age) VALUES (?, ?, ?, ?)
+Lixx,1,0,25;Wangxx,2,0,29;Zhouxx,3,1,22;Long,4,1,33
+
+
+// 删除一行数据
+DELETE FROM UserInfo WHERE Name = ?
+
+
+// 修改一行数据
+UPDATE UserInfo SET Age = ? WHERE Name = ?
+
+
+// 查询一行数据
+SELECT * FROM UserInfo WHERE Name = ?
+Name,IDNo,Sex,Age
